@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include("header.ejs",{info:"mohamed"}) %>
+    <h1>Hello</h1>
+
+    <ul>
+      <% for(i in std){ %>
+
+      <li><%= std[i] %></li>
+
+      <% } %>
+    </ul>
+
+    <%- include("Footer.ejs") %>
+  </body>
+</html>
